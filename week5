@@ -1,0 +1,33 @@
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if (row.getField("name").startsWith("Ab")) {
+    print(row);
+  }
+}
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if (row.getField("name").startsWith("X")) {
+    print(row)
+  }
+}
+
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if (row.getField("name").startsWith("Xz")) {
+    print(row)
+  }
+}
+
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  // your code here
+  if(row.getField("name").endsWith("x")){
+    print(row)
+  }
+}
+
