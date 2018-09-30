@@ -1,0 +1,27 @@
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if (row.getField("name") == "Atticus") {
+    print(row);
+  }
+}
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if (row.getField("name") == "River") {
+    print(row);
+  }
+}
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if (row.getField("rank") < 10) {
+    print(row);
+  }
+}
+
+table = new SimpleTable("baby-2010.csv");
+for (row: table) {
+  if(row.getField("rank") > 950){
+    print(row)
+  }  
+}
