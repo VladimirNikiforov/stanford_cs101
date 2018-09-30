@@ -79,3 +79,45 @@ for (row: table) {
     print(row)
   }
 }
+
+
+
+table = new SimpleTable("baby-2010.csv");
+count = 0;
+for (row: table) {
+  if (row.getField("name").startsWith("A")) {
+    print(row);
+    count = count + 1;  // increases the value in count by 1
+  }
+}
+print("count:", count);
+
+table = new SimpleTable("baby-2010.csv");
+count = 0;
+for (row: table) {
+  // your code here
+  if(row.getField("name").startsWith("O")){
+    count++
+  }  
+}
+print("count:", count)
+
+table = new SimpleTable("baby-2010.csv");
+count = 0;
+for (row: table) {
+  // your code here
+  if(row.getField("name").startsWith("T") && row.getField("gender") == "girl"){
+    count++
+  }  
+}
+print("count:", count)
+
+table = new SimpleTable("baby-2010.csv");
+count = 0;
+for (row: table) {
+  // your code here
+  if(row.getField("name").endsWith("d") && row.getField("gender") == "boy"){
+    count++
+  }  
+}
+print("count:", count)
