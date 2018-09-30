@@ -121,3 +121,109 @@ for (row: table) {
   }  
 }
 print("count:", count)
+
+
+
+table = new SimpleTable("baby-2010.csv");
+
+count1 = 0;  // boy counter
+count2 = 0;  // girl counter
+for (row: table) {
+
+  if (row.getField("name").endsWith("y") &&
+      row.getField("gender") == "boy") {
+    count1 = count1 + 1;
+  }
+
+  if (row.getField("name").endsWith("y") &&
+      row.getField("gender") == "girl") {
+    count2 = count2 + 1;
+  }
+
+}
+print("boy count:", count1);
+print("girl count:", count2);
+
+table = new SimpleTable("baby-2010.csv");
+
+count1 = 0;
+count2 = 0;
+count3 = 0;
+for (row: table) {
+
+  if (row.getField("name").endsWith("a")) {
+    count1 = count1 + 1;
+  }
+
+  if (row.getField("name").endsWith("i")) {
+    count2 = count2 + 1;
+  }
+  
+  if (row.getField("name").endsWith("o")) {
+    count3 = count3 + 1;
+  }
+
+}
+print("a count:", count1);
+print("i count:", count2);
+print("o count:", count3);
+
+
+
+
+table = new SimpleTable("baby-2010.csv");
+count1 = 0;
+count2 = 0;
+for (row: table) {
+
+  if (row.getField("name").startsWith("A")) {
+    count1 = count1 + 1;
+  }
+
+  if (row.getField("name").startsWith("B")) {
+    count2 = count2 + 1;
+  }
+
+}
+print("count:", count1);
+print("count:", count2);
+
+
+
+
+table = new SimpleTable("survey-2012.csv");
+table.convertToLowerCase();
+count1 = 0;
+count2 = 0;
+for (row: table) {
+
+  if (row.getField("color") == "red") {
+    count1 = count1 + 1;
+  }
+
+  if (row.getField("color") == "blue") {
+    count2 = count2 + 1;
+  }
+
+}
+print("count:", count1);
+print("count:", count2);
+
+
+table = new SimpleTable("survey-2012.csv");
+table.convertToLowerCase();
+count1 = 0;
+count2 = 0;
+for (row: table) {
+  if(row.getField("soda") == "coke"){
+  if (row.getField("color") == "red") {
+    count1 = count1 + 1;
+  }
+
+  if (row.getField("color") == "blue") {
+    count2 = count2 + 1;
+  }
+}
+}
+print("count:", count1);
+print("count:", count2);
